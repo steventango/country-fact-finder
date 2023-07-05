@@ -97,9 +97,9 @@ const Main = {
               const h3 = document.createElement('h3');
               h3.innerText = property;
               card.appendChild(h3);
-              p.innerText = format(info[property].text);
+              p.innerHTML = format(info[property].text);
             } else {
-              p.innerText = format(info.text);
+              p.innerHTML = format(info.text);
             }
             card.appendChild(p);
           }
