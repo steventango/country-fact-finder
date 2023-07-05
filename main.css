@@ -1,0 +1,63 @@
+body {
+  display: flex;
+  margin: 0;
+  overflow: hidden;
+}
+
+main {
+  position: relative;
+  font-family: Roboto, sans-serif;
+  color: var(--mdc-theme-text-primary-on-background);
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+  background: #ede7f6;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: .25em 0;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+.right {
+  flex-grow: 1;
+}
+
+.mdc-card {
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.mdc-linear-progress {
+  position: absolute;
+  height: 8px;
+  z-index: 1;
+  display: none;
+}
+
+.mdc-linear-progress__buffer {
+  background-color: transparent;
+}
+
+.mdc-drawer {
+  height: 100vh;
+}
+
+.mdc-drawer .mdc-list-item {
+  padding-left: 16px;
+  border-radius: 16px;
+}
+
+#search_bar {
+  margin-top: 16px;
+}

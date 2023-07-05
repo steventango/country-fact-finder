@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Country Fact Finder</title>
+  <link rel="stylesheet" href="https://unpkg.com/material-components-web@0.41.1/dist/material-components-web.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Roboto|Material+Icons">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <aside class="mdc-drawer">
+    <div class="mdc-drawer__header">
+      <h3 class="mdc-drawer__title">Country Fact Finder</h3>
+      <h6 class="mdc-drawer__subtitle">Steven Tang</h6>
+      <div id="search_bar" class="mdc-text-field mdc-text-field--outlined mdc-text-field--dense mdc-text-field--with-leading-icon">
+        <i class="material-icons mdc-text-field__icon">search</i>
+        <input type="text" id="search_bar__input" class="mdc-text-field__input">
+        <label for="search_bar__input" class="mdc-floating-label">Search</label>
+        <div class="mdc-notched-outline">
+          <svg>
+            <path class="mdc-notched-outline__path"></path>
+          </svg>
+        </div>
+        <div class="mdc-notched-outline__idle"></div>
+      </div>
+    </div>
+    <div class="mdc-drawer__content">
+      <nav id="list" class="mdc-list">
+        <a id="last" class="mdc-list-item" href="https://github.com/factbook/factbook.json" target="_blank">
+          <i class="material-icons mdc-list-item__graphic" aria-hidden="true">bookmark</i>
+          <span class="mdc-list-item__text">CIA World Factbook</span>
+        </a>
+      </nav>
+    </div>
+  </aside>
+  <div class="right">
+    <div id="progress_bar" role="progressbar" class="mdc-linear-progress mdc-linear-progress--indeterminate">
+      <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+        <span class="mdc-linear-progress__bar-inner"></span>
+      </div>
+      <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+        <span class="mdc-linear-progress__bar-inner"></span>
+      </div>
+    </div>
+    <main class="mdc-layout-grid">
+      <article id="article" class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+          <div class="mdc-card">
+            Select a country from the list on the left to learn more about it.
+          </div>
+        </div>
+      </article>
+    </main>
+  </div>
+  <script defer src="https://unpkg.com/material-components-web@0.41.1/dist/material-components-web.min.js"></script>
+  <script defer src="main.js"></script>
+</body>
+
+</html>
